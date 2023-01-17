@@ -1,0 +1,66 @@
+-> C# is object oriented programming language provided by microsoft that runs on .Net framework
+-> with the help of c#, we can develop diff types of secured and robust app:
+    -> window applications
+    -> web applications
+    -> distributed applications
+    -> web service applications
+    -> database applications
+-> C# is designed for CLI(Common language Infrastructre). CLI is a specification that describes executable code and runtime environment.
+
+-> C# FEATURES:
+    - simple
+    - modern programming language
+    - object oriented
+    - type safe
+    - interoperability
+    - scalable and updateable
+    - component oriented
+    - structured programming language
+    - rich library
+    - fast speed
+
+-> C# VARIABLES:(int, double, float, char)
+    - Decimal types
+    - Boolean types
+    - Integral types
+    - Floating point types
+    - Nullable types
+
+-> DATA TYPES:
+    - there are 3 types of data types:
+        * Value Data type
+        * Pointer Data type
+        * References Data type
+    
+    - Value Data type:
+        => these are integer-based and floating-based. 
+        => C# supports both signed and unsigned literals
+        => there are 2 types:
+            1. Pre defined(Integer, Boolean, Float, etc)
+            2. User defined(Structure, Enumerations etc)
+    
+    - References Data type:
+        => they do not contain the actual data stored in a variable, but they contain a ref to the variables
+        => if the data is changed by one of the variable, the other variable automatically reflects this change in Value
+        => there are 2 types:
+            1. Pre defined(objects, String)
+            2. User defined(Class, Interface)
+        
+    - Pointer Data type:
+        => it is a variable, it is also known as locator or indicator that points to an address of a value
+        => & (address operator) (determine the address of the variable)
+        => * (indirection operator) (access the value of an address)
+
+-> OPERATORS:
+    - arithmetic(+, -, *, /, %)
+    - relational(<, <=, >, >=, ==, !=)
+    - logical(&&, ||, !)
+    - bitwise(&, |, <<, >>, ~, ^)
+    - assignment(=, +=, -=, *=, /=, %=)
+    - unary(++, --)
+    - ternary(? :)
+    - Misc
+
+-> KEYWORDS:
+    - A keyword is a reserved word. You cannot use it as a variable name, constant name etc.
+    - In C# keywords cannot be used as identifiers. However, if we want to use the keywords as identifiers, we may prefix the keyword with @ character.
