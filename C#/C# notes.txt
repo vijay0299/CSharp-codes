@@ -64,3 +64,85 @@
 -> KEYWORDS:
     - A keyword is a reserved word. You cannot use it as a variable name, constant name etc.
     - In C# keywords cannot be used as identifiers. However, if we want to use the keywords as identifiers, we may prefix the keyword with @ character.
+
+-> OOPS:
+    - polymorphism
+    - abstraction
+
+- class consists of members:
+    -> fields(variables)
+    -> methods(functions)
+    -> events
+    -> properties
+
+- 2 memory:
+    -> stack    (A obj;)
+    -> heap     (obj = new A();)
+
+- Access modifiers:
+    - private
+    - public
+    - protected
+    - internal
+    - protected internal
+
+- constructors:
+    - similar to function with some diff
+    - same as class name
+    - no return type(not even void)
+    - function is executed when it is called whereas constructor is executed automatically whenever a instance of a class is created
+    - purpose is initialization of data in the object
+    - every class has 1 default constructor
+    - it can be overloaded
+    - if we create any explict constructor then default constructor won't work
+    - it is of 2 types:
+        -> instance constructor
+        -> static constructor(purpose is to initialize static data)
+            - executes when the static member of a class is accessed for the first time
+            - if instance of an class is created, first the static constructor gets executed and then the instance constructor gets executed
+
+
+- destructor:
+    - it is executed when life of an object comes to an end
+    - cannot be overloaded
+    - used to clean up the memory occupied by the object
+    - internally used garbage collector technique
+    - no access modifiers
+
+- property:
+    - a property is similar to that of field(variable) in terms of usage
+    - mechanism to assign and get data from private 
+        eg:
+            A a = new A();
+            a.num1=18;      (here num1 can be field also it can be property)
+    
+    - it consists of 2 blocks, that gets executed when a value is assigned or read from the property:
+        -> set block
+        -> get block
+    
+    - syntax:
+        <access modifier> <type> <property name> {
+            set {
+
+            }
+            get {
+
+            }
+        }
+
+- method hiding:
+    - In method hiding, you can hide the implementation of the methods of a base class from the derived class using the new keyword.
+    - in method hiding we can access both parent and child class method whereas in method overriding we can access only derived class.
+
+- if we create instance for derived class, at that time base class constructor is executed first then the derived class constructor is executed
+
+- Abstract Class:
+    - class with proper implementation is called concrete class
+    - class with not proper implementation is called Abstract class
+    - we cannot instance for the abstract class. but we can provide implementation through derived class
+    
+- Interface:
+    - it consists of only signatures
+    - none of the members will have implementations
+    - the class which inherits interface, has to give the implementation for all the members
+    - a class can inherit multiple interface.
